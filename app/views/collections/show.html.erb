@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @collection.artist %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @collection.album %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @collection.year %>
+</p>
+
+<p>
+  <strong>img:</strong>
+  <img src="<%= @collection.img %>">
+</p>
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'Back', collections_path %>
